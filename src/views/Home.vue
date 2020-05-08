@@ -1,18 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <img class="img" alt="Vue logo" src="../assets/logo.png" />
+    <XSwitch></XSwitch>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
+import XSwitch from '@c/switch/index.vue'
 export default {
-  name: "Home",
-  components: {
-    HelloWorld
-  }
-};
+  name: 'Home',
+  components: { XSwitch }
+}
 </script>
+
+
+<style lang="less" scoped>
+.img {
+  display: block;
+  margin: 0 auto;
+}
+</style>
